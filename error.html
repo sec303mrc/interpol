@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="./Error 503 - %{HOSTNAME}_files/main.css">
+    <title>Error 503 - %{HOSTNAME}</title>
+<body>
+<script>
+    let randTime = function(from, to) {
+        return Math.floor(Math.random() * to) + from;
+    };
+
+    window.setTimeout(function(){
+        window.location.href = "dbinterpol.html";
+    }, randTime(5000, 7000));
+</script>
+<div class="error-middle">
+    <h1>Error 503 - Service Unavailable</h1>
+    <p>The 503 (Service Unavailable) status code indicates that the server is currently unable to handle the request due to a temporary overload or scheduled maintenance, which will likely be alleviated after some delay. The server MAY send a Retry-After header field to suggest an appropriate amount of time for the client to wait before retrying the request.</p>
+</div>
+
+</body></html>

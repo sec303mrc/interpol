@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/d-flames.svg'), url('../images/d-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%, cover;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font: normal normal bold 30px/46px Poppins;
+    display: inline-block;
+    border-bottom: 4px solid #1900ff;
+    padding-bottom: 4px;
+    margin: 0 0 48px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+input:not([type=checkbox]), button {
+    width: 100%;
+    font: normal normal bold 20px/30px Poppins;
+    text-align: center;
+    padding: 13px;
+}
+
+input:not([type=checkbox]) {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    margin: 20px 0 36px 0;
+    outline: none;
+}
+
+button {
+    background: #00f7ff;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 12px;
+    transition: .4s ease-out;
+    cursor: pointer;
+    max-width: 350px;
+}
+
+button:hover {
+    background: #4400ff;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.col {
+    width: 50%;
+    padding: 0 25px;
+}
+
+.logo {
+    margin-bottom: 100px;
+}
+
+.form, .confirmation{
+    background: #000;
+    border: 1px solid #212121;
+    border-radius: 15px;
+    max-width: 730px;
+    width: 100%;
+    font: normal normal bold 18px/27px Poppins;
+    padding: 45px 15px;
+}
+
+.checkbox {
+    position: relative;
+    text-align: left;
+}
+
+.checkbox input {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.checkbox::before {
+    content: '';
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.checkbox span {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    background: #00e1ff;
+    border-radius: 10px;
+    display: none;
+}
+
+.checkbox label {
+    cursor: pointer;
+}
+
+.checkbox input:checked + span {
+    display: inline-block;
+}
+
+.gray {
+    text-align: left;
+    font: normal normal normal 12px/19px Poppins;
+    color: #6C6C6C;
+    margin: 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('../images/m-flames.svg'), url('../images/m-bg.jpg');
+    }
+
+    h1 {
+        font: normal normal bold 26px/32px Poppins;
+        margin-bottom: 40px;
+        width: 222px;
+        padding-bottom: 8px;
+    }
+
+    h1.wider {
+        width: 260px;
+    }
+
+    input:not([type=checkbox]) {
+        margin: 20px 0;
+        padding: 8px 13px;
+    }
+
+    button {
+        padding: 10px 13px;
+        max-width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 232px;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+    }
+
+    .form, .confirmation {
+        padding: 20px 15px;
+        margin-bottom: 80px;
+    }
+
+    .col {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .gray {
+        font: normal normal normal 10px/16px Poppins;
+        margin-bottom: 20px;
+    }
+}
